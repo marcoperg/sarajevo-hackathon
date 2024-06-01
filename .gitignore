@@ -1,6 +1,5 @@
 *.swp
 .DS_Store
-image_training/
 age_models
 
 # Created by https://www.toptal.com/developers/gitignore/api/jupyternotebooks,python
