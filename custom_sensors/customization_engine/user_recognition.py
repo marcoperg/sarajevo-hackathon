@@ -25,16 +25,12 @@ clip_processor = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch32")
 class_labels_file = "class_labels.txt"  # Replace with the actual path
 class_labels = read_class_labels(class_labels_file)
 def get_emotion(img):
-    try:
-        cv2.imshow('test', img)
-    except Exception:
-        pass
     inputs = clip_processor(text=class_labels, images=img, return_tensors="pt", padding=True)
     outputs = clip(**inputs)
     logits_per_image = outputs.logits_per_image
     return logits_per_image.softmax(dim=1).detach().numpy()
 
-def detection_loop(face_names, lock):
+def detection_loop(face_names, emotions, lock):
     # Get a reference to webcam #0 (the default one)
 
     video_capture = cv2.VideoCapture(0)
@@ -95,7 +91,6 @@ def detection_loop(face_names, lock):
             probs = [0]
             if len(face_locations) > 0:
                 first_face = face_locations[0]
-                print(first_face)
                 probs = get_emotion(small_frame[first_face[0]:first_face[2],first_face[3]:first_face[1]])
 
             face_encodings = face_recognition.face_encodings(rgb_small_frame, face_locations)
@@ -123,6 +118,9 @@ def detection_loop(face_names, lock):
         process_this_frame = not process_this_frame
         font = cv2.FONT_HERSHEY_DUPLEX
         cv2.putText(frame, str(probs), (30, 30), font, 1.0, (255, 255, 255), 1)
+        emotions.clear()
+        for prob in probs:
+            emotions.append(prob)
 
         # Display the results
         with lock:
@@ -152,22 +150,28 @@ def detection_loop(face_names, lock):
     video_capture.release()
     cv2.destroyAllWindows()
 
-def run(face_names, lock):
+def run(face_names, emotions, lock):
     app = Flask(__name__)
-    @app.route("/")
-    def hello_world():
+    @app.route("/users")
+    def users_recog():
         with lock:
             return str(face_names)
+    
+    @app.route("/emotion")
+    def emotion():
+        with lock:
+            return str(emotions)
 
 
-    app.run()
+    app.run(p=5002)
 
 if __name__ == "__main__":
     face_names = []
+    emotions = []
     lock = Lock()
 
     #p1 = Thread(target=detection_loop, args=(face_names, lock))
-    p2 = Thread(target=run, args=(face_names, lock))
+    p2 = Thread(target=run, args=(face_names, emotions, lock))
     p2.start()
-    detection_loop(face_names, lock)
+    detection_loop(face_names, emotions, lock)
     p2.join()
