@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "minor_version": 5,
+  "key": "core.device_registry",
+  "data": {
+    "devices": [
+      {"area_id":null,"config_entries":["1cd91a0233dc6f1f2b9fbc7106725f4c"],"configuration_url":null,"connections":[],"disabled_by":null,"entry_type":"service","hw_version":null,"id":"30a84014e17fbf7976998fb08c95d2c9","identifiers":[["sun","1cd91a0233dc6f1f2b9fbc7106725f4c"]],"labels":[],"manufacturer":null,"model":null,"name_by_user":null,"name":"Sun","serial_number":null,"sw_version":null,"via_device_id":null},
+      {"area_id":null,"config_entries":["0d2c097b987caaa4ea4854be0f601e63"],"configuration_url":"https://www.met.no/en","connections":[],"disabled_by":null,"entry_type":"service","hw_version":null,"id":"2bf2706305cb83d9a50ec87660bbb758","identifiers":[["met","0d2c097b987caaa4ea4854be0f601e63"]],"labels":[],"manufacturer":"Met.no","model":"Forecast","name_by_user":null,"name":"Forecast","serial_number":null,"sw_version":null,"via_device_id":null},
+      {"area_id":null,"config_entries":["041bbd8cdc4286a49b0f20f782c8132a"],"configuration_url":null,"connections":[],"disabled_by":null,"entry_type":null,"hw_version":null,"id":"b0c7adc060590b2fd2b992035104bb51","identifiers":[["mqtt","psoc6_mpy_sensornode_2"]],"labels":[],"manufacturer":"Infineon","model":"PSoC6","name_by_user":null,"name":"PSoC6 MicroPython Sensornode Working Space","serial_number":null,"sw_version":"0.2","via_device_id":null},
+      {"area_id":null,"config_entries":["041bbd8cdc4286a49b0f20f782c8132a"],"configuration_url":null,"connections":[],"disabled_by":null,"entry_type":null,"hw_version":null,"id":"88f9bd9579bffb3853c361afd2bd8a0a","identifiers":[["mqtt","psoc6_mpy_sensornode_4"]],"labels":[],"manufacturer":"Infineon","model":"PSoC6","name_by_user":null,"name":"PSoC6 MicroPython Sensornode Office Box","serial_number":null,"sw_version":"0.2","via_device_id":null},
+      {"area_id":null,"config_entries":["041bbd8cdc4286a49b0f20f782c8132a"],"configuration_url":null,"connections":[],"disabled_by":null,"entry_type":null,"hw_version":null,"id":"ba2878ae65ec282b22a23804cc69cbe6","identifiers":[["mqtt","psoc6_mpy_sensornode_1"]],"labels":[],"manufacturer":"Infineon","model":"PSoC6","name_by_user":null,"name":"PSoC6 MicroPython Sensornode Open Space","serial_number":null,"sw_version":"0.2","via_device_id":null},
+      {"area_id":null,"config_entries":["041bbd8cdc4286a49b0f20f782c8132a"],"configuration_url":null,"connections":[],"disabled_by":null,"entry_type":null,"hw_version":null,"id":"e3e1d499af553539b7f24bbdcd026f03","identifiers":[["mqtt","psoc6_mpy_sensornode_5"]],"labels":[],"manufacturer":"Infineon","model":"PSoC6","name_by_user":null,"name":"PSoC6 MicroPython Sensornode Test device","serial_number":null,"sw_version":"0.2","via_device_id":null}
+    ],
+    "deleted_devices": []
+  }
+}

@@ -15,20 +15,20 @@ def detection_loop(face_names, lock):
     video_capture = cv2.VideoCapture(0)
 
     # Load a sample picture and learn how to recognize it.
-    obama_image = face_recognition.load_image_file("image_training/marco.jpg")
+    obama_image = face_recognition.load_image_file("../../image_training/marco.jpg")
     obama_face_encoding = face_recognition.face_encodings(obama_image)[0]
 
     # Load a second sample picture and learn how to recognize it.
-    biden_image = face_recognition.load_image_file("image_training/javi.jpg")
+    biden_image = face_recognition.load_image_file("../../image_training/javi.jpg")
     biden_face_encoding = face_recognition.face_encodings(biden_image)[0]
 
     # Load a second sample picture and learn how to recognize it.
-    sanchez_image = face_recognition.load_image_file("image_training/david.jpg")
+    sanchez_image = face_recognition.load_image_file("../../image_training/david.jpg")
     sanchez_face_encoding = face_recognition.face_encodings(sanchez_image)[0]
 
 
     # Load a second sample picture and learn how to recognize it.
-    macron_image = face_recognition.load_image_file("image_training/julian.png")
+    macron_image = face_recognition.load_image_file("../../image_training/julian.png")
     macron_face_encoding = face_recognition.face_encodings(macron_image)[0]
 
 
