@@ -28,7 +28,7 @@ def get_emotion(img):
     inputs = clip_processor(text=class_labels, images=img, return_tensors="pt", padding=True)
     outputs = clip(**inputs)
     logits_per_image = outputs.logits_per_image
-    return logits_per_image.softmax(dim=1).detach().numpy()
+    return class_labels[logits_per_image.softmax(dim=1).argmax().item()]
 
 def detection_loop(face_names, emotions, lock):
     # Get a reference to webcam #0 (the default one)
@@ -160,10 +160,10 @@ def run(face_names, emotions, lock):
     @app.route("/emotion")
     def emotion():
         with lock:
-            return str(emotions)
+            return str(emotions[0])
 
 
-    app.run(p=5002)
+    app.run(p=5002, host="0.0.0.0")
 
 if __name__ == "__main__":
     face_names = []

@@ -1,0 +1,20 @@
+{
+  "user_metadata": {
+    "name": "José Javier",
+    "surname": "Román Camacho",
+    "age": 91,
+    "email": "javier@gmail.com"
+  },
+  "conversation" : [
+    {
+      "date_time" : "2017-01-01 12:00:00",
+      "message" : "Hello, how are you?",
+      "sender" : "David"
+    },
+    {
+      "date_time" : "2017-01-01 12:00:01",
+      "message" : "Good, and you",
+      "sender" : "Brain"
+    }
+  ]
+}
