@@ -4,33 +4,58 @@ import face_recognition
 import cv2
 import numpy as np
 
+from transformers import CLIPProcessor, CLIPModel
+
 #from multiprocessing import Process, Value, Lock, Manager
 #from multiprocessing.shared_memory import ShareableList
 
 from threading import Thread, Lock
 
 
+font = cv2.FONT_HERSHEY_DUPLEX
+
+def read_class_labels(filepath):
+    with open(filepath, 'r') as file:
+        labels = [line.strip() for line in file.readlines()]
+    return labels
+
+
+clip = CLIPModel.from_pretrained("openai/clip-vit-base-patch32")
+clip_processor = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch32")
+class_labels_file = "class_labels.txt"  # Replace with the actual path
+class_labels = read_class_labels(class_labels_file)
+def get_emotion(img):
+    try:
+        cv2.imshow('test', img)
+    except Exception:
+        pass
+    inputs = clip_processor(text=class_labels, images=img, return_tensors="pt", padding=True)
+    outputs = clip(**inputs)
+    logits_per_image = outputs.logits_per_image
+    return logits_per_image.softmax(dim=1).detach().numpy()
+
 def detection_loop(face_names, lock):
     # Get a reference to webcam #0 (the default one)
+
     video_capture = cv2.VideoCapture(0)
 
     # Load a sample picture and learn how to recognize it.
-    obama_image = face_recognition.load_image_file("../../image_training/marco.jpg")
+    obama_image = face_recognition.load_image_file("image_training/marco.jpg")
     obama_face_encoding = face_recognition.face_encodings(obama_image)[0]
 
     # Load a second sample picture and learn how to recognize it.
-    biden_image = face_recognition.load_image_file("../../image_training/javi.jpg")
+    biden_image = face_recognition.load_image_file("image_training/javi.jpg")
     biden_face_encoding = face_recognition.face_encodings(biden_image)[0]
 
     # Load a second sample picture and learn how to recognize it.
-    sanchez_image = face_recognition.load_image_file("../../image_training/david.jpg")
+    sanchez_image = face_recognition.load_image_file("image_training/david.jpg")
     sanchez_face_encoding = face_recognition.face_encodings(sanchez_image)[0]
 
 
     # Load a second sample picture and learn how to recognize it.
-    macron_image = face_recognition.load_image_file("../../image_training/julian.png")
+    macron_image = face_recognition.load_image_file("image_training/julian.png")
     macron_face_encoding = face_recognition.face_encodings(macron_image)[0]
-
+    # Function to read class labels from a text file
 
     # Create arrays of known face encodings and their names
     known_face_encodings = [
@@ -59,6 +84,7 @@ def detection_loop(face_names, lock):
         # Only process every other frame of video to save time
         if process_this_frame:
             # Resize frame of video to 1/4 size for faster face recognition processing
+
             small_frame = cv2.resize(frame, (0, 0), fx=0.25, fy=0.25)
 
             # Convert the image from BGR color (which OpenCV uses) to RGB color (which face_recognition uses)
@@ -66,6 +92,11 @@ def detection_loop(face_names, lock):
             
             # Find all the faces and face encodings in the current frame of video
             face_locations = face_recognition.face_locations(rgb_small_frame)
+            probs = [0]
+            if len(face_locations) > 0:
+                first_face = face_locations[0]
+                print(first_face)
+                probs = get_emotion(small_frame[first_face[0]:first_face[2],first_face[3]:first_face[1]])
 
             face_encodings = face_recognition.face_encodings(rgb_small_frame, face_locations)
 
@@ -87,10 +118,11 @@ def detection_loop(face_names, lock):
                     if matches[best_match_index]:
                         name = known_face_names[best_match_index]
 
-                face_names.append(name)
+                    face_names.append(name)
 
         process_this_frame = not process_this_frame
-
+        font = cv2.FONT_HERSHEY_DUPLEX
+        cv2.putText(frame, str(probs), (30, 30), font, 1.0, (255, 255, 255), 1)
 
         # Display the results
         with lock:
