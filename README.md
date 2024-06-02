@@ -8,4 +8,4 @@ Code repository of Spain's team solution. To run the live demo run notebooks/mai
     pip install -r requirements.txt
 ```
 
-For a detailed writeup of the system check out the [hacker.io](https://hacker.io) blog!
+For a detailed writeup of the system check out the [hacker.io]([https://hacker.io](https://www.hackster.io/dcanorosillo/sarajevo-hackathon-88f043) blog!
