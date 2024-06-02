@@ -4,43 +4,200 @@
   "key": "core.restore_state",
   "data": [
     {
-      "state": {"entity_id":"person.user","state":"unknown","attributes":{"editable":true,"id":"user","device_trackers":[],"user_id":"4791f6a7105a43248efa995d50079f2c","friendly_name":"user"},"last_changed":"2024-06-01T17:55:42.649523+00:00","last_reported":"2024-06-01T17:55:43.588532+00:00","last_updated":"2024-06-01T17:55:43.588532+00:00","context":{"id":"01HZAF2VV4PAHW2THWYBHM1X8F","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"person.user","state":"unknown","attributes":{"editable":true,"id":"user","device_trackers":[],"source":"person.user","user_id":"4791f6a7105a43248efa995d50079f2c","friendly_name":"user"},"last_changed":"2024-06-02T00:50:57.908042+00:00","last_reported":"2024-06-02T00:50:57.908042+00:00","last_updated":"2024-06-02T00:50:57.908042+00:00","context":{"id":"01HZB6V67M8X28SJX2NDFFM9SF","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2024-06-01T18:59:15.217422+00:00"
+      "last_seen": "2024-06-02T00:50:59.262813+00:00"
     },
     {
-      "state": {"entity_id":"conversation.home_assistant","state":"2024-06-01T18:19:08.445675+00:00","attributes":{"friendly_name":"Home Assistant"},"last_changed":"2024-06-01T18:19:08.445722+00:00","last_reported":"2024-06-01T18:19:08.445722+00:00","last_updated":"2024-06-01T18:19:08.445722+00:00","context":{"id":"01HZAGDQRXMRD1D64AT2HKV74Z","parent_id":null,"user_id":"4791f6a7105a43248efa995d50079f2c"}},
+      "state": {"entity_id":"conversation.home_assistant","state":"2024-06-01T18:19:08.445675+00:00","attributes":{"friendly_name":"Home Assistant"},"last_changed":"2024-06-02T00:50:58.802822+00:00","last_reported":"2024-06-02T00:50:58.802822+00:00","last_updated":"2024-06-02T00:50:58.802822+00:00","context":{"id":"01HZB6V73J29G1WC4XXZR41VBF","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2024-06-01T18:59:15.217422+00:00"
+      "last_seen": "2024-06-02T00:50:59.262813+00:00"
     },
     {
-      "state": {"entity_id":"tts.google_en_com","state":"unknown","attributes":{"friendly_name":"Google en com"},"last_changed":"2024-06-01T17:55:43.279760+00:00","last_reported":"2024-06-01T17:55:43.279760+00:00","last_updated":"2024-06-01T17:55:43.279760+00:00","context":{"id":"01HZAF2VHF5R2W6CPTSCNXZNJX","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"tts.google_en_com","state":"unknown","attributes":{"friendly_name":"Google en com"},"last_changed":"2024-06-02T00:50:58.986918+00:00","last_reported":"2024-06-02T00:50:58.986918+00:00","last_updated":"2024-06-02T00:50:58.986918+00:00","context":{"id":"01HZB6V79A20DA0PE9VCFJRE14","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2024-06-01T18:59:15.217422+00:00"
+      "last_seen": "2024-06-02T00:50:59.262813+00:00"
     },
     {
-      "state": {"entity_id":"sensor.psoc6_micropython_sensornode_eestec_office_co2_ppm","state":"566","attributes":{"unit_of_measurement":"ppm","device_class":"carbon_dioxide","friendly_name":"PSoC6 MicroPython Sensornode EESTEC Office CO2 PPM"},"last_changed":"2024-06-01T18:58:52.749454+00:00","last_reported":"2024-06-01T18:58:52.749454+00:00","last_updated":"2024-06-01T18:58:52.749454+00:00","context":{"id":"01HZAJPG6DBKJSAAS2QJHE5TR4","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.psoc6_micropython_sensornode_small_meeting_room_co2_ppm","state":"1441","attributes":{"unit_of_measurement":"ppm","device_class":"carbon_dioxide","friendly_name":"PSoC6 MicroPython Sensornode Small Meeting Room CO2 PPM"},"last_changed":"2024-06-02T00:49:47.125446+00:00","last_reported":"2024-06-02T00:49:47.125446+00:00","last_updated":"2024-06-02T00:49:47.125446+00:00","context":{"id":"01HZB6S13NKAYHWPG38WYV39WD","parent_id":null,"user_id":null}},
       "extra_data": {
-        "native_value": "566",
+        "native_value": "1441",
         "native_unit_of_measurement": "ppm"
       },
-      "last_seen": "2024-06-01T18:59:15.217422+00:00"
+      "last_seen": "2024-06-02T00:50:15.906210+00:00"
     },
     {
-      "state": {"entity_id":"sensor.psoc6_micropython_sensornode_eestec_office_temperature","state":"23.34","attributes":{"unit_of_measurement":"°C","device_class":"temperature","friendly_name":"PSoC6 MicroPython Sensornode EESTEC Office Temperature"},"last_changed":"2024-06-01T18:59:12.686967+00:00","last_reported":"2024-06-01T18:59:12.686967+00:00","last_updated":"2024-06-01T18:59:12.686967+00:00","context":{"id":"01HZAJQ3NEFR7C3BMY0FEN24ZJ","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.psoc6_micropython_sensornode_small_meeting_room_temperature","state":"23.12","attributes":{"unit_of_measurement":"°C","device_class":"temperature","friendly_name":"PSoC6 MicroPython Sensornode Small Meeting Room Temperature"},"last_changed":"2024-06-02T00:50:11.915669+00:00","last_reported":"2024-06-02T00:50:11.915669+00:00","last_updated":"2024-06-02T00:50:11.915669+00:00","context":{"id":"01HZB6SSABKDQAEJ9S6DMQV026","parent_id":null,"user_id":null}},
       "extra_data": {
-        "native_value": "23.34",
+        "native_value": "23.12",
         "native_unit_of_measurement": "°C"
       },
-      "last_seen": "2024-06-01T18:59:15.217422+00:00"
+      "last_seen": "2024-06-02T00:50:15.906210+00:00"
     },
     {
-      "state": {"entity_id":"sensor.psoc6_micropython_sensornode_eestec_office_atmospheric_pressure","state":"955.80","attributes":{"unit_of_measurement":"hPa","device_class":"atmospheric_pressure","friendly_name":"PSoC6 MicroPython Sensornode EESTEC Office Atmospheric Pressure"},"last_changed":"2024-06-01T18:59:12.687986+00:00","last_reported":"2024-06-01T18:59:12.687986+00:00","last_updated":"2024-06-01T18:59:12.687986+00:00","context":{"id":"01HZAJQ3NF985GJPHE6KZ3Q68S","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.psoc6_micropython_sensornode_small_meeting_room_atmospheric_pressure","state":"956.54","attributes":{"unit_of_measurement":"hPa","device_class":"atmospheric_pressure","friendly_name":"PSoC6 MicroPython Sensornode Small Meeting Room Atmospheric Pressure"},"last_changed":"2024-06-02T00:49:57.096387+00:00","last_reported":"2024-06-02T00:49:57.096387+00:00","last_updated":"2024-06-02T00:49:57.096387+00:00","context":{"id":"01HZB6SAV8A1E9DK5ECBHBJMR0","parent_id":null,"user_id":null}},
       "extra_data": {
-        "native_value": "95580",
+        "native_value": "95654",
         "native_unit_of_measurement": "Pa"
       },
-      "last_seen": "2024-06-01T18:59:15.217422+00:00"
+      "last_seen": "2024-06-02T00:50:15.906210+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.psoc6_micropython_sensornode_working_space_light","state":"58367","attributes":{"unit_of_measurement":"lx","device_class":"illuminance","friendly_name":"PSoC6 MicroPython Sensornode Working Space Light"},"last_changed":"2024-06-02T00:50:12.451464+00:00","last_reported":"2024-06-02T00:50:12.451464+00:00","last_updated":"2024-06-02T00:50:12.451464+00:00","context":{"id":"01HZB6SSV34DNPJFABH2J4BRRB","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "58367",
+        "native_unit_of_measurement": "lx"
+      },
+      "last_seen": "2024-06-02T00:50:15.906210+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.psoc6_micropython_sensornode_working_space_co2_ppm","state":"713","attributes":{"unit_of_measurement":"ppm","device_class":"carbon_dioxide","friendly_name":"PSoC6 MicroPython Sensornode Working Space CO2 PPM"},"last_changed":"2024-06-02T00:50:15.037223+00:00","last_reported":"2024-06-02T00:50:15.037223+00:00","last_updated":"2024-06-02T00:50:15.037223+00:00","context":{"id":"01HZB6SWBX4QKXQ4J9AHBKPPW0","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "713",
+        "native_unit_of_measurement": "ppm"
+      },
+      "last_seen": "2024-06-02T00:50:15.906210+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.psoc6_micropython_sensornode_working_space_temperature","state":"24.72","attributes":{"unit_of_measurement":"°C","device_class":"temperature","friendly_name":"PSoC6 MicroPython Sensornode Working Space Temperature"},"last_changed":"2024-06-02T00:50:15.037971+00:00","last_reported":"2024-06-02T00:50:15.037971+00:00","last_updated":"2024-06-02T00:50:15.037971+00:00","context":{"id":"01HZB6SWBXXAR9DQ9VRZPSTGDP","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "24.72",
+        "native_unit_of_measurement": "°C"
+      },
+      "last_seen": "2024-06-02T00:50:15.906210+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.psoc6_micropython_sensornode_working_space_atmospheric_pressure","state":"957.04","attributes":{"unit_of_measurement":"hPa","device_class":"atmospheric_pressure","friendly_name":"PSoC6 MicroPython Sensornode Working Space Atmospheric Pressure"},"last_changed":"2024-06-02T00:49:58.145473+00:00","last_reported":"2024-06-02T00:49:58.145473+00:00","last_updated":"2024-06-02T00:49:58.145473+00:00","context":{"id":"01HZB6SBW1ASPETXHGJWSJGAAD","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "95704",
+        "native_unit_of_measurement": "Pa"
+      },
+      "last_seen": "2024-06-02T00:50:15.906210+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.psoc6_micropython_sensornode_working_space_2_light","state":"59023","attributes":{"unit_of_measurement":"lx","device_class":"illuminance","friendly_name":"PSoC6 MicroPython Sensornode Working Space 2 Light"},"last_changed":"2024-06-02T00:50:14.482059+00:00","last_reported":"2024-06-02T00:50:14.482059+00:00","last_updated":"2024-06-02T00:50:14.482059+00:00","context":{"id":"01HZB6SVTJ9JFHQ1REG6QB1GHK","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "59023",
+        "native_unit_of_measurement": "lx"
+      },
+      "last_seen": "2024-06-02T00:50:15.906210+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.psoc6_micropython_sensornode_working_space_2_co2_ppm","state":"651","attributes":{"unit_of_measurement":"ppm","device_class":"carbon_dioxide","friendly_name":"PSoC6 MicroPython Sensornode Working Space 2 CO2 PPM"},"last_changed":"2024-06-02T00:49:25.744641+00:00","last_reported":"2024-06-02T00:49:25.744641+00:00","last_updated":"2024-06-02T00:49:25.744641+00:00","context":{"id":"01HZB6RC7G801TVG2SVRNNRC6Z","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "651",
+        "native_unit_of_measurement": "ppm"
+      },
+      "last_seen": "2024-06-02T00:50:15.906210+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.psoc6_micropython_sensornode_working_space_2_temperature","state":"24.93","attributes":{"unit_of_measurement":"°C","device_class":"temperature","friendly_name":"PSoC6 MicroPython Sensornode Working Space 2 Temperature"},"last_changed":"2024-06-02T00:50:15.546851+00:00","last_reported":"2024-06-02T00:50:15.546851+00:00","last_updated":"2024-06-02T00:50:15.546851+00:00","context":{"id":"01HZB6SWVTYRJPFZP6VYK9CN41","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "24.93",
+        "native_unit_of_measurement": "°C"
+      },
+      "last_seen": "2024-06-02T00:50:15.906210+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.psoc6_micropython_sensornode_working_space_2_atmospheric_pressure","state":"957.00","attributes":{"unit_of_measurement":"hPa","device_class":"atmospheric_pressure","friendly_name":"PSoC6 MicroPython Sensornode Working Space 2 Atmospheric Pressure"},"last_changed":"2024-06-02T00:49:55.552909+00:00","last_reported":"2024-06-02T00:49:55.552909+00:00","last_updated":"2024-06-02T00:49:55.552909+00:00","context":{"id":"01HZB6S9B0C23RMSYTBCSPAWA0","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "95700",
+        "native_unit_of_measurement": "Pa"
+      },
+      "last_seen": "2024-06-02T00:50:15.906210+00:00"
+    },
+    {
+      "state": {"entity_id":"binary_sensor.radar_rpi_1_presence","state":"off","attributes":{"device_class":"occupancy","friendly_name":"Radar rpi-1 Presence"},"last_changed":"2024-06-01T23:22:24.259791+00:00","last_reported":"2024-06-01T23:22:24.259791+00:00","last_updated":"2024-06-01T23:22:24.259791+00:00","context":{"id":"01HZB1S143CBSSTM115VQMBY3N","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-06-02T00:50:15.906210+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.psoc6_micropython_sensornode_office_box_light","state":"32783","attributes":{"unit_of_measurement":"lx","device_class":"illuminance","friendly_name":"PSoC6 MicroPython Sensornode Office Box Light"},"last_changed":"2024-06-02T00:48:14.485905+00:00","last_reported":"2024-06-02T00:48:14.485905+00:00","last_updated":"2024-06-02T00:48:14.485905+00:00","context":{"id":"01HZB6P6MNJKMNT2DYZ84AYK6W","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "32783",
+        "native_unit_of_measurement": "lx"
+      },
+      "last_seen": "2024-06-02T00:50:15.906210+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.psoc6_micropython_sensornode_office_box_co2_ppm","state":"657","attributes":{"unit_of_measurement":"ppm","device_class":"carbon_dioxide","friendly_name":"PSoC6 MicroPython Sensornode Office Box CO2 PPM"},"last_changed":"2024-06-02T00:50:14.337206+00:00","last_reported":"2024-06-02T00:50:14.337206+00:00","last_updated":"2024-06-02T00:50:14.337206+00:00","context":{"id":"01HZB6SVP1XZ5VQNJYDT5PFGM9","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "657",
+        "native_unit_of_measurement": "ppm"
+      },
+      "last_seen": "2024-06-02T00:50:15.906210+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.psoc6_micropython_sensornode_office_box_relative_humidity","state":"37.00","attributes":{"unit_of_measurement":"%","device_class":"humidity","friendly_name":"PSoC6 MicroPython Sensornode Office Box Relative Humidity"},"last_changed":"2024-06-02T00:49:59.416676+00:00","last_reported":"2024-06-02T00:49:59.416676+00:00","last_updated":"2024-06-02T00:49:59.416676+00:00","context":{"id":"01HZB6SD3R4V0YC052PJ325QA3","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "37.00",
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2024-06-02T00:50:15.906210+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.psoc6_micropython_sensornode_office_box_temperature","state":"25.33","attributes":{"unit_of_measurement":"°C","device_class":"temperature","friendly_name":"PSoC6 MicroPython Sensornode Office Box Temperature"},"last_changed":"2024-06-02T00:50:14.339570+00:00","last_reported":"2024-06-02T00:50:14.339570+00:00","last_updated":"2024-06-02T00:50:14.339570+00:00","context":{"id":"01HZB6SVP36T7570E5D1W66XSG","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "25.33",
+        "native_unit_of_measurement": "°C"
+      },
+      "last_seen": "2024-06-02T00:50:15.906210+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.psoc6_micropython_sensornode_office_box_atmospheric_pressure","state":"956.58","attributes":{"unit_of_measurement":"hPa","device_class":"atmospheric_pressure","friendly_name":"PSoC6 MicroPython Sensornode Office Box Atmospheric Pressure"},"last_changed":"2024-06-02T00:49:59.418393+00:00","last_reported":"2024-06-02T00:49:59.418393+00:00","last_updated":"2024-06-02T00:49:59.418393+00:00","context":{"id":"01HZB6SD3T0M47ZJ1R2ERWD4FG","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "95658",
+        "native_unit_of_measurement": "Pa"
+      },
+      "last_seen": "2024-06-02T00:50:15.906210+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.psoc6_micropython_sensornode_eestec_office_co2_ppm","state":"785","attributes":{"unit_of_measurement":"ppm","device_class":"carbon_dioxide","friendly_name":"PSoC6 MicroPython Sensornode EESTEC Office CO2 PPM"},"last_changed":"2024-06-01T23:19:02.401166+00:00","last_reported":"2024-06-01T23:19:02.401166+00:00","last_updated":"2024-06-01T23:19:02.401166+00:00","context":{"id":"01HZB1JW01QJZJTMYCPG0SEKTV","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "785",
+        "native_unit_of_measurement": "ppm"
+      },
+      "last_seen": "2024-06-02T00:50:15.906210+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.psoc6_micropython_sensornode_eestec_office_temperature","state":"22.94","attributes":{"unit_of_measurement":"°C","device_class":"temperature","friendly_name":"PSoC6 MicroPython Sensornode EESTEC Office Temperature"},"last_changed":"2024-06-01T23:19:06.364995+00:00","last_reported":"2024-06-01T23:19:06.364995+00:00","last_updated":"2024-06-01T23:19:06.364995+00:00","context":{"id":"01HZB1JZVWY00860BEH9MTRXQ0","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "22.94",
+        "native_unit_of_measurement": "°C"
+      },
+      "last_seen": "2024-06-02T00:50:15.906210+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.psoc6_micropython_sensornode_eestec_office_atmospheric_pressure","state":"956.68","attributes":{"unit_of_measurement":"hPa","device_class":"atmospheric_pressure","friendly_name":"PSoC6 MicroPython Sensornode EESTEC Office Atmospheric Pressure"},"last_changed":"2024-06-01T23:19:06.366765+00:00","last_reported":"2024-06-01T23:19:06.366765+00:00","last_updated":"2024-06-01T23:19:06.366765+00:00","context":{"id":"01HZB1JZVYEHHBFX4F8AGTXW89","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "95668",
+        "native_unit_of_measurement": "Pa"
+      },
+      "last_seen": "2024-06-02T00:50:15.906210+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.psoc6_micropython_sensornode_outside_co2_ppm","state":"284","attributes":{"unit_of_measurement":"ppm","device_class":"carbon_dioxide","friendly_name":"PSoC6 MicroPython Sensornode Outside CO2 PPM"},"last_changed":"2024-06-02T00:50:09.442644+00:00","last_reported":"2024-06-02T00:50:09.442644+00:00","last_updated":"2024-06-02T00:50:09.442644+00:00","context":{"id":"01HZB6SPX2E2NXDMQ0PFBPH0ZF","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "284",
+        "native_unit_of_measurement": "ppm"
+      },
+      "last_seen": "2024-06-02T00:50:15.906210+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.psoc6_micropython_sensornode_outside_temperature","state":"12.91","attributes":{"unit_of_measurement":"°C","device_class":"temperature","friendly_name":"PSoC6 MicroPython Sensornode Outside Temperature"},"last_changed":"2024-06-02T00:50:14.480983+00:00","last_reported":"2024-06-02T00:50:14.480983+00:00","last_updated":"2024-06-02T00:50:14.480983+00:00","context":{"id":"01HZB6SVTG42HWVHSXY5MHD34P","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "12.91",
+        "native_unit_of_measurement": "°C"
+      },
+      "last_seen": "2024-06-02T00:50:15.906210+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.psoc6_micropython_sensornode_outside_atmospheric_pressure","state":"957.02","attributes":{"unit_of_measurement":"hPa","device_class":"atmospheric_pressure","friendly_name":"PSoC6 MicroPython Sensornode Outside Atmospheric Pressure"},"last_changed":"2024-06-02T00:49:49.492806+00:00","last_reported":"2024-06-02T00:49:49.492806+00:00","last_updated":"2024-06-02T00:49:49.492806+00:00","context":{"id":"01HZB6S3DMCHJ2WDW807CWM5CZ","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "95702",
+        "native_unit_of_measurement": "Pa"
+      },
+      "last_seen": "2024-06-02T00:50:15.906210+00:00"
     },
     {
       "state": {"entity_id":"sensor.psoc6_micropython_sensornode_kitchen_co2_ppm","state":"448","attributes":{"unit_of_measurement":"ppm","device_class":"carbon_dioxide","friendly_name":"PSoC6 MicroPython Sensornode Kitchen CO2 PPM"},"last_changed":"2024-06-01T18:58:38.870301+00:00","last_reported":"2024-06-01T18:58:38.870301+00:00","last_updated":"2024-06-01T18:58:38.870301+00:00","context":{"id":"01HZAJP2MPQS7GV2K30DF7E5WE","parent_id":null,"user_id":null}},
@@ -62,94 +219,6 @@
       "state": {"entity_id":"sensor.psoc6_micropython_sensornode_kitchen_atmospheric_pressure","state":"955.33","attributes":{"unit_of_measurement":"hPa","device_class":"atmospheric_pressure","friendly_name":"PSoC6 MicroPython Sensornode Kitchen Atmospheric Pressure"},"last_changed":"2024-06-01T18:58:56.315124+00:00","last_reported":"2024-06-01T18:58:56.315124+00:00","last_updated":"2024-06-01T18:58:56.315124+00:00","context":{"id":"01HZAJPKNV8AQBP7ZVAAEJS6ZP","parent_id":null,"user_id":null}},
       "extra_data": {
         "native_value": "95533",
-        "native_unit_of_measurement": "Pa"
-      },
-      "last_seen": "2024-06-01T18:59:15.217422+00:00"
-    },
-    {
-      "state": {"entity_id":"sensor.psoc6_micropython_sensornode_working_space_light","state":"58463","attributes":{"unit_of_measurement":"lx","device_class":"illuminance","friendly_name":"PSoC6 MicroPython Sensornode Working Space Light"},"last_changed":"2024-06-01T18:59:13.482918+00:00","last_reported":"2024-06-01T18:59:13.482918+00:00","last_updated":"2024-06-01T18:59:13.482918+00:00","context":{"id":"01HZAJQ4EAC8R2SVNV8FN4804F","parent_id":null,"user_id":null}},
-      "extra_data": {
-        "native_value": "58463",
-        "native_unit_of_measurement": "lx"
-      },
-      "last_seen": "2024-06-01T18:59:15.217422+00:00"
-    },
-    {
-      "state": {"entity_id":"sensor.psoc6_micropython_sensornode_working_space_co2_ppm","state":"735","attributes":{"unit_of_measurement":"ppm","device_class":"carbon_dioxide","friendly_name":"PSoC6 MicroPython Sensornode Working Space CO2 PPM"},"last_changed":"2024-06-01T18:59:08.745178+00:00","last_reported":"2024-06-01T18:59:08.745178+00:00","last_updated":"2024-06-01T18:59:08.745178+00:00","context":{"id":"01HZAJPZT9NWAGAENFFZYMVT31","parent_id":null,"user_id":null}},
-      "extra_data": {
-        "native_value": "735",
-        "native_unit_of_measurement": "ppm"
-      },
-      "last_seen": "2024-06-01T18:59:15.217422+00:00"
-    },
-    {
-      "state": {"entity_id":"sensor.psoc6_micropython_sensornode_working_space_temperature","state":"25.06","attributes":{"unit_of_measurement":"°C","device_class":"temperature","friendly_name":"PSoC6 MicroPython Sensornode Working Space Temperature"},"last_changed":"2024-06-01T18:59:13.917654+00:00","last_reported":"2024-06-01T18:59:13.917654+00:00","last_updated":"2024-06-01T18:59:13.917654+00:00","context":{"id":"01HZAJQ4VXNMD0A2CJBCEFDJ75","parent_id":null,"user_id":null}},
-      "extra_data": {
-        "native_value": "25.06",
-        "native_unit_of_measurement": "°C"
-      },
-      "last_seen": "2024-06-01T18:59:15.217422+00:00"
-    },
-    {
-      "state": {"entity_id":"sensor.psoc6_micropython_sensornode_working_space_atmospheric_pressure","state":"955.98","attributes":{"unit_of_measurement":"hPa","device_class":"atmospheric_pressure","friendly_name":"PSoC6 MicroPython Sensornode Working Space Atmospheric Pressure"},"last_changed":"2024-06-01T18:59:13.919070+00:00","last_reported":"2024-06-01T18:59:13.919070+00:00","last_updated":"2024-06-01T18:59:13.919070+00:00","context":{"id":"01HZAJQ4VZMATDDMJYQ7VAJT70","parent_id":null,"user_id":null}},
-      "extra_data": {
-        "native_value": "95598",
-        "native_unit_of_measurement": "Pa"
-      },
-      "last_seen": "2024-06-01T18:59:15.217422+00:00"
-    },
-    {
-      "state": {"entity_id":"sensor.psoc6_micropython_sensornode_office_box_atmospheric_pressure","state":"955.51","attributes":{"unit_of_measurement":"hPa","device_class":"atmospheric_pressure","friendly_name":"PSoC6 MicroPython Sensornode Office Box Atmospheric Pressure"},"last_changed":"2024-06-01T18:59:08.369927+00:00","last_reported":"2024-06-01T18:59:08.369927+00:00","last_updated":"2024-06-01T18:59:08.369927+00:00","context":{"id":"01HZAJPZEHGF113R8B7BXKQTM2","parent_id":null,"user_id":null}},
-      "extra_data": {
-        "native_value": "95551",
-        "native_unit_of_measurement": "Pa"
-      },
-      "last_seen": "2024-06-01T18:59:15.217422+00:00"
-    },
-    {
-      "state": {"entity_id":"sensor.psoc6_micropython_sensornode_office_box_relative_humidity","state":"32.04","attributes":{"unit_of_measurement":"%","device_class":"humidity","friendly_name":"PSoC6 MicroPython Sensornode Office Box Relative Humidity"},"last_changed":"2024-06-01T18:59:08.364334+00:00","last_reported":"2024-06-01T18:59:08.364334+00:00","last_updated":"2024-06-01T18:59:08.364334+00:00","context":{"id":"01HZAJPZECT6VSCV5A21DCQTQS","parent_id":null,"user_id":null}},
-      "extra_data": {
-        "native_value": "32.04",
-        "native_unit_of_measurement": "%"
-      },
-      "last_seen": "2024-06-01T18:59:15.217422+00:00"
-    },
-    {
-      "state": {"entity_id":"sensor.psoc6_micropython_sensornode_office_box_temperature","state":"26.45","attributes":{"unit_of_measurement":"°C","device_class":"temperature","friendly_name":"PSoC6 MicroPython Sensornode Office Box Temperature"},"last_changed":"2024-06-01T18:59:08.369364+00:00","last_reported":"2024-06-01T18:59:08.369364+00:00","last_updated":"2024-06-01T18:59:08.369364+00:00","context":{"id":"01HZAJPZEHAE6QM1383WA39RK2","parent_id":null,"user_id":null}},
-      "extra_data": {
-        "native_value": "26.45",
-        "native_unit_of_measurement": "°C"
-      },
-      "last_seen": "2024-06-01T18:59:15.217422+00:00"
-    },
-    {
-      "state": {"entity_id":"sensor.psoc6_micropython_sensornode_office_box_co2_ppm","state":"572","attributes":{"unit_of_measurement":"ppm","device_class":"carbon_dioxide","friendly_name":"PSoC6 MicroPython Sensornode Office Box CO2 PPM"},"last_changed":"2024-06-01T18:58:53.465217+00:00","last_reported":"2024-06-01T18:58:53.465217+00:00","last_updated":"2024-06-01T18:58:53.465217+00:00","context":{"id":"01HZAJPGWST034ZSPD6C7QN4QT","parent_id":null,"user_id":null}},
-      "extra_data": {
-        "native_value": "572",
-        "native_unit_of_measurement": "ppm"
-      },
-      "last_seen": "2024-06-01T18:59:15.217422+00:00"
-    },
-    {
-      "state": {"entity_id":"sensor.psoc6_micropython_sensornode_small_meeting_room_co2_ppm","state":"1521","attributes":{"unit_of_measurement":"ppm","device_class":"carbon_dioxide","friendly_name":"PSoC6 MicroPython Sensornode Small Meeting Room CO2 PPM"},"last_changed":"2024-06-01T18:58:56.612505+00:00","last_reported":"2024-06-01T18:58:56.612505+00:00","last_updated":"2024-06-01T18:58:56.612505+00:00","context":{"id":"01HZAJPKZ4Y2ZZJQM6ERS1653V","parent_id":null,"user_id":null}},
-      "extra_data": {
-        "native_value": "1521",
-        "native_unit_of_measurement": "ppm"
-      },
-      "last_seen": "2024-06-01T18:59:15.217422+00:00"
-    },
-    {
-      "state": {"entity_id":"sensor.psoc6_micropython_sensornode_small_meeting_room_temperature","state":"23.17","attributes":{"unit_of_measurement":"°C","device_class":"temperature","friendly_name":"PSoC6 MicroPython Sensornode Small Meeting Room Temperature"},"last_changed":"2024-06-01T18:59:09.957972+00:00","last_reported":"2024-06-01T18:59:09.957972+00:00","last_updated":"2024-06-01T18:59:09.957972+00:00","context":{"id":"01HZAJQ105ESHJ2Z8CQ8MJGERR","parent_id":null,"user_id":null}},
-      "extra_data": {
-        "native_value": "23.17",
-        "native_unit_of_measurement": "°C"
-      },
-      "last_seen": "2024-06-01T18:59:15.217422+00:00"
-    },
-    {
-      "state": {"entity_id":"sensor.psoc6_micropython_sensornode_small_meeting_room_atmospheric_pressure","state":"955.47","attributes":{"unit_of_measurement":"hPa","device_class":"atmospheric_pressure","friendly_name":"PSoC6 MicroPython Sensornode Small Meeting Room Atmospheric Pressure"},"last_changed":"2024-06-01T18:59:09.958418+00:00","last_reported":"2024-06-01T18:59:09.958418+00:00","last_updated":"2024-06-01T18:59:09.958418+00:00","context":{"id":"01HZAJQ106QYNVPPBC68W7RJYH","parent_id":null,"user_id":null}},
-      "extra_data": {
-        "native_value": "95547",
         "native_unit_of_measurement": "Pa"
       },
       "last_seen": "2024-06-01T18:59:15.217422+00:00"

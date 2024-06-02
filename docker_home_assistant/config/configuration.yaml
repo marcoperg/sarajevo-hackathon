@@ -14,18 +14,8 @@ scene: !include scenes.yaml
 sensor:
 
   - platform: rest
-    name: Dummy Sensor
-    unique_id: sensor.dummy
-    resource: http://10.11.22.31:5002  # Replace with the host machine's IP address
-    method: GET
-    headers:
-      Content-Type: application/json
-    value_template: '{{ value }}'
-    scan_interval: 5
-
-  - platform: rest
     name: User Recognition
-    resource: http://10.11.22.31:5005/users # Replace with the host machine's IP address
+    resource: http://10.11.22.244:5005/users # Replace with the host machine's IP address
     unique_id: sensor.user_recognition
     method: GET
     headers:
@@ -34,9 +24,19 @@ sensor:
     scan_interval: 5
 
   - platform: rest
-    name: Customization Engine Sensor
-    resource: http://10.11.22.31:5005  # Replace with the host machine's IP address
-    unique_id: sensor.customization_engine_sensor
+    name: Emotion Sensor
+    resource: http://10.11.22.244:5005/emotion  # Replace with the host machine's IP address
+    unique_id: sensor.emotion
+    method: GET
+    headers:
+      Content-Type: application/json
+    value_template: '{{ value }}'
+    scan_interval: 5
+
+  - platform: rest
+    name: Age Sensor
+    resource: http://10.11.22.244:5005/age  # Replace with the host machine's IP address
+    unique_id: sensor.age
     method: GET
     headers:
       Content-Type: application/json

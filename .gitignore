@@ -1,6 +1,9 @@
+# TTS .wav folder
+tts/
 *.swp
 .DS_Store
 age_models
+llama-2-7b-chat.Q5_K_M.gguf
 
 # Created by https://www.toptal.com/developers/gitignore/api/jupyternotebooks,python
 # Edit at https://www.toptal.com/developers/gitignore?templates=jupyternotebooks,python
